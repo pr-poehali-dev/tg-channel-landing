@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 219 22% 96%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -18,14 +18,14 @@
     --primary: 207 100% 40%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 207 100% 93%;
+    --secondary-foreground: 207 100% 40%;
 
-    --muted: 210 40% 96.1%;
+    --muted: 219 22% 96%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 207 100% 93%;
+    --accent-foreground: 207 100% 40%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -34,7 +34,7 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 207 100% 40%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -109,5 +109,24 @@
   h5,
   h6 {
     font-family: "Inter", sans-serif;
+  }
+}
+
+@layer utilities {
+  .telegram-gradient {
+    background: linear-gradient(135deg, #0088cc 0%, #64b5f6 100%);
+  }
+
+  .telegram-card {
+    background: linear-gradient(
+      135deg,
+      rgba(0, 136, 204, 0.1) 0%,
+      rgba(100, 181, 246, 0.05) 100%
+    );
+    border: 1px solid rgba(0, 136, 204, 0.2);
+  }
+
+  .telegram-shadow {
+    box-shadow: 0 4px 20px rgba(0, 136, 204, 0.15);
   }
 }
